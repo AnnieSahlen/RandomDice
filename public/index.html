@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Random Dice</title>
+  </head>
+  <body>
+    <h1>Random Dice</h1>
+    <div id="userContainer"></div>
+    <div id="user">
+      <form id="formUser">
+        <label for="inputUser">Choose player name</label>
+        <input id="inputUser" placeholder="Player name..." />
+        <button>Register</button>
+      </form>
+    </div>
+
+    <div id="chatScoreContainer">
+      <div id="message">
+        <h2>Chat</h2>
+        <form id="formMessage">
+          <label for="inputMessage">Write message:</label>
+          <input id="inputMessage" />
+          <button>Send</button>
+        </form>
+        <div id="messageBoard">
+          <ul id="messages"></ul>
+        </div>
+      </div>
+
+      <div id="diceBoard">
+        <h2>Score Board</h2>
+        <button id="throw-button">Throw dice</button>
+        <ul id="throws"></ul>
+      </div>
+    </div>
+
+    <!-- <div id="messageBoard">
+      <h2>Chat messages</h2>
+      <ul id="messages"></ul>
+    </div> -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+  </body>
+</html>

@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: lightblue;
+  color: tomato;
+}
+input {
+  box-sizing: border-box;
+}
+h1 {
+  text-align: center;
+  padding: 50px;
+  border-bottom: 1px solid tomato;
+  background-color: rgb(226, 243, 243);
+  font-size: 40px;
+  margin: 0;
+}
+button {
+  border: 1px solid tomato;
+  border-radius: 30px;
+  padding: 10px;
+  background-color: azure;
+  font-weight: 600;
+  width: fit-content;
+}
+input {
+  border: 1px solid tomato;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: rgba(232, 239, 239, 0.5);
+}
+ul {
+  list-style-type: none;
+}
+li {
+  padding: 1px;
+}
+#userContainer {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid tomato;
+  border-radius: 30px;
+  margin: 50px 100px;
+  height: 200px;
+  justify-content: center;
+  box-shadow: -5px 5px 5px #888888;
+}
+#userContainer > * {
+  margin: 5px;
+}
+/* #play {
+  border: 1px solid tomato;
+  border-radius: 30px;
+  padding: 10px;
+  background-color: azure;
+  font-weight: 600;
+} */
+#formUser {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid tomato;
+  border-radius: 30px;
+  margin: 50px 100px;
+  height: 200px;
+  justify-content: center;
+  box-shadow: -5px 5px 5px #888888;
+}
+#chatScoreContainer {
+  display: none;
+  /* flex-direction: row; */
+  justify-content: space-evenly;
+  margin: 50px 0;
+  /* margin-bottom: 50px; */
+}
+#message,
+#diceBoard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid tomato;
+  border-radius: 30px;
+  height: 500px;
+  /* justify-content: center; */
+  box-shadow: -5px 5px 5px #888888;
+  width: 40vw;
+  overflow: auto;
+}
+#message > *,
+#diceBoard > * {
+  margin: 20px 5px 5px;
+}
+#formMessage > * {
+  margin: 5px;
+}
+#formUser > * {
+  margin: 5px;
+}
+#formUser > ::placeholder {
+  text-align: center;
+  color: tomato;
+}
+#formUser > label {
+  font-size: 26px;
+  font-weight: bold;
+}
+#welcome {
+  font-size: 34px;
+}
+#formMessage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#messageBoard,
+#throws {
+  align-self: flex-start;
+  margin: 15px;
+}
